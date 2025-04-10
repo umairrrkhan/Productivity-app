@@ -1,4 +1,4 @@
-#  Productivity Tracker App - Beginner's Guide
+#  Productivity Tracker App 
 
 ![App Preview](https://via.placeholder.com/1200x400?text=Clean+Modern+Interface+with+Progress+Tracking)
 
