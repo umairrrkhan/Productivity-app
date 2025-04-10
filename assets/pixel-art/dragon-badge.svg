@@ -1,0 +1,15 @@
+<svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .pixel { shape-rendering: crispEdges; }
+  </style>
+  <!-- Dragon Body -->
+  <path class="pixel" d="M32 16h8v8h-8zM40 24h8v8h-8zM24 24h8v8h-8zM16 32h8v8h-8zM24 32h8v8h-8zM32 32h8v8h-8zM40 32h8v8h-8zM48 32h8v8h-8z" fill="#FF6B6B"/>
+  <!-- Dragon Wings -->
+  <path class="pixel" d="M16 24h8v8h-8zM48 24h8v8h-8z" fill="#4ECDC4"/>
+  <!-- Dragon Details -->
+  <path class="pixel" d="M24 40h8v8h-8zM40 40h8v8h-8z" fill="#45B7AF"/>
+  <!-- Dragon Eyes -->
+  <path class="pixel" d="M24 24h4v4h-4zM44 24h4v4h-4z" fill="#FFE66D"/>
+  <!-- Sparkle Effects -->
+  <path class="pixel" d="M12 20h4v4h-4zM52 20h4v4h-4zM32 44h4v4h-4z" fill="#FFFFFF"/>
+</svg>

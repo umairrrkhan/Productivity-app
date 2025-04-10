@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <linearGradient id="starGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFD700"/>
+      <stop offset="50%" style="stop-color:#FFA500"/>
+      <stop offset="100%" style="stop-color:#FF8C00"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="1" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <g transform="translate(4 4)" filter="url(#glow)">
+    <path d="M12 0L15 9L24 9L17 15L20 24L12 18L4 24L7 15L0 9L9 9L12 0Z" fill="url(#starGrad)" stroke="#B8860B" stroke-width="1"/>
+    <path d="M12 4L14 10L20 10L15 14L17 20L12 16L7 20L9 14L4 10L10 10L12 4Z" fill="#FFE4B5" stroke="#B8860B" stroke-width="1"/>
+    <circle cx="12" cy="12" r="3" fill="#B8860B"/>
+  </g>
+  <animateTransform
+    attributeName="transform"
+    type="rotate"
+    from="0 16 16"
+    to="360 16 16"
+    dur="6s"
+    repeatCount="indefinite"
+  />
+</svg>

@@ -1,0 +1,17 @@
+<svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .pixel { shape-rendering: crispEdges; }
+  </style>
+  <!-- Premium Feature Icon Base -->
+  <path class="pixel" d="M16 16h32v32h-32z" fill="#6C5CE7"/>
+  <!-- Inner Feature Design -->
+  <path class="pixel" d="M24 24h16v16h-16z" fill="#A8A4E7"/>
+  <!-- Corner Accents -->
+  <path class="pixel" d="M20 20h4v4h-4zM40 20h4v4h-4zM20 40h4v4h-4zM40 40h4v4h-4z" fill="#FFE66D"/>
+  <!-- Center Icon -->
+  <path class="pixel" d="M28 28h8v8h-8z" fill="#FFFFFF"/>
+  <!-- Sparkle Effects -->
+  <path class="pixel" d="M12 12h4v4h-4zM48 12h4v4h-4zM12 48h4v4h-4zM48 48h4v4h-4z" fill="#FF6B6B"/>
+  <!-- Glow Effects -->
+  <path class="pixel" d="M24 16h16v2h-16zM16 24h2v16h-2zM46 24h2v16h-2zM24 46h16v2h-16z" fill="#A8A4E7" opacity="0.6"/>
+</svg>

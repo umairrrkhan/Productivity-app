@@ -1,0 +1,27 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // User profile data
+    match /users/{userId} {
+      allow read, write: if request.auth != null && request.auth.uid == userId;
+
+      // Nested streaks collection
+      match /streaks/{streakId} {
+        allow read: if request.auth != null && request.auth.uid == userId;
+        allow create: if request.auth != null && request.auth.uid == userId
+          && request.resource.data.timestamp is timestamp
+          && (request.resource.data.type in ['virgin', 'nofap']);
+        allow update: if request.auth != null && request.auth.uid == userId
+          && request.resource.data.timestamp > resource.data.timestamp;
+      }
+
+      // Nested collections collection for achievements
+      match /collections/{collectionId} {
+        allow read, write: if request.auth != null && request.auth.uid == userId
+          && request.resource.data.unlockedAt is timestamp
+          && request.resource.data.type in ['virgin', 'nofap']
+          && request.resource.data.milestone is number;
+      }
+    }
+  }
+}

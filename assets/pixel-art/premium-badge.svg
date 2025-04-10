@@ -1,0 +1,17 @@
+<svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .pixel { shape-rendering: crispEdges; }
+  </style>
+  <!-- Premium Badge Base -->
+  <path class="pixel" d="M20 12h24v40h-24z" fill="#FFD700"/>
+  <!-- Crown Design -->
+  <path class="pixel" d="M16 16h8v8h-8zM40 16h8v8h-8zM24 8h16v8h-16z" fill="#FFA500"/>
+  <!-- Badge Details -->
+  <path class="pixel" d="M24 24h16v20h-16z" fill="#FF8C00"/>
+  <!-- Star Accents -->
+  <path class="pixel" d="M28 28h8v8h-8z" fill="#FFFFFF"/>
+  <!-- Sparkle Effects -->
+  <path class="pixel" d="M12 24h4v4h-4zM48 24h4v4h-4zM12 44h4v4h-4zM48 44h4v4h-4z" fill="#FFE66D"/>
+  <!-- Glow Effects -->
+  <path class="pixel" d="M20 52h24v4h-24z" fill="#FFA500" opacity="0.6"/>
+</svg>
